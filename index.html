@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin:0px;
+            padding:0px;
+        }
+        nav{
+            border:2px solid black;
+            height:50px;
+        }
+        ul{
+            display:flex;
+            flex-direction:row;
+            list-style-type:none;
+        }
+        ul li{
+            height:50px;
+            line-height:50px;
+            text-align: center;
+            width:200px;
+            font-weight:bold;
+        }
+        ul li:hover{
+            background-color: lightblue;
+        }
+        ul li a{
+            text-decoration:none;
+            color:black;
+            font-size:20px;
+            font-family:'Roboto';
+            font-weight:700px;
+        }
+        hr{
+            border:1px solid black;
+        }
+        ul li ul{
+            display:none;
+        }
+        ul li:hover ul{
+            display:flex;
+            flex-direction:column;
+            border:1px solid black;
+            width:250px;
+            height:350px;
+        }
+        ul li ul li{
+            display:flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+        p{
+            margin-left:10px;
+            margin-right:0px;
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+        }
+        .cut{
+            color:gray;
+        }
+        h1{
+            text-align:center;
+            margin:20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Menubar</h1>
+    <nav>
+        <ul>
+            <li><a href="#">File</a></li>
+            <li><a href="#">Edit</a>
+                <ul>
+                    <li><p>Undo</p><p>cmd X</p></li>
+                    <li><p>Redo</p><p>cmd Y</p></li>
+                    <hr/>
+                    <li><p class="cut">Cut</p><p>cmd X</p></li>
+                    <li><p class="cut">Copy</p><p>cmd C</p></li>
+                    <li><p>Paste</p><p>cmd V</p></li>
+                    <li><p>Select all</p><p>cmd A</p></li>
+                    <hr/>
+                    <li><p>Find and replace</p><p>cmd H</p></li>
+                </ul>
+            </li>
+            <li><a href="#">Format</a></li>
+            <li><a href="#">View</a></li>
+            <li><a href="#">History</a></li>
+            <li><a href="#">Bookmarks</a></li>
+            <li><a href="#">Tools</a></li>
+            <li><a href="#">Help</a></li>
+        </ul>
+    </nav>
+</body>
+</html>
